@@ -6,7 +6,7 @@
     max-width: 80rem;
     margin: 0 auto;
     padding: 1rem 2rem;
-    overflow: hidden;
+    overflow:hidden;
     display: flex; 
     flex-wrap: nowrap;
     align-items: center;
@@ -44,28 +44,32 @@
 /* Media queries for mobile devices */
 @media (max-width: 780px) {
     .navbar {
+        display: flex; 
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         height: auto;
         padding: 1rem;
-        justify-content: center; 
+        justify-content: center;
     }
 
     .navMenuItems {
+        display: flex; /* Ensure flexbox is applied */
         flex-direction: row;
-        justify-content: center; 
-        flex-wrap: wrap; 
-        margin: 0; 
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
     }
 
     .navMenuItem {
-        margin: 0.2rem;
-        font-size:medium;
-        flex: 1 1 auto; 
-        text-align: center; 
+        margin: 0.5rem;
+        font-size: medium;
+        flex: 1 1 auto;
+        text-align: center;
+        min-width: 50px; /* Ensure there's a minimum width */
     }
 
-    .navMenuItem:hover
+    .navMenuItem:hover,
     .active {
         padding-bottom: 0.2rem;
         border-bottom-width: 2px;
@@ -73,3 +77,4 @@
         border-bottom: 3px solid rgb(192, 238, 8);
     }
 }
+
