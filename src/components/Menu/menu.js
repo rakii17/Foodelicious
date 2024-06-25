@@ -1,6 +1,5 @@
 import React from 'react';
 import "./menu.css";
-import foodimg from '../../assets/food.jpg';
 import idli from '../../assets/idli.png';
 import puliyogare from '../../assets/puliyogare.png';
 import dosa from '../../assets/dosa.jpg';

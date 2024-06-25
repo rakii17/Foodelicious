@@ -31,7 +31,7 @@
 }
 
 .menu-item-card h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0 0 0.5rem 0;
     color: black;
     text-decoration: underline;
@@ -44,7 +44,7 @@
 
 .menu-item-image {
     width: 90%;
-    height: auto;
+    height: 14rem;
     border-radius: 8px;
 }
 

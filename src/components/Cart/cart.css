@@ -16,6 +16,13 @@
   text-decoration: underline;
 }
 
+.cart p {
+  color: black;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
 .cart-items {
   display: flex;
   flex-direction: column;
@@ -70,8 +77,12 @@
   }
 
   .cart h1 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       margin-bottom: 1rem;
+  }
+
+  .cart p{
+    font-size: 1rem;
   }
 
   .cart-items {

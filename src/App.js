@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar/navbar';
 import Home from './components/Home/home';
 import Menu from './components/Menu/menu';
-import About from './components/About/about';
 import Cart from './components/Cart/cart';
 
 function App() {
@@ -16,23 +15,22 @@ function App() {
   };
 
   const handleCheckout = () => {
-    console.log('Checkout', cart);
+    alert('Your order is delivered to your address. Thank You for using Foodelicious Webpage.', cart);
+    setCart([]);
   };
 
   return (
     <Router>
       <div>
         <Navbar />
-        <div id="homepage">
+        <div id="home">
           <Home />
         </div>
-        <div id="skills">
+        <div id="menu">
           <Menu setCart={setCart} cart={cart} />
         </div>
-        <div id="projects">
-          <About />
-        </div>
-        <div id="works">
+        
+        <div id="cart">
           <Cart cart={cart} removeFromCart={removeFromCart} handleCheckout={handleCheckout} />
         </div>
       </div>

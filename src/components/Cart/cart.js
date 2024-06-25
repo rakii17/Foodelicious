@@ -6,7 +6,7 @@ const Cart = ({ cart = [], removeFromCart, handleCheckout }) => {
     <div className="cart">
       <h1>Cart</h1>
       {cart.length === 0 ? (
-        <p>No items in cart</p>
+        <p>No items in cart. <br/>Add items to cart</p>
       ) : (
         <div className="cart-items">
           {cart.map((item, index) => (

@@ -9,7 +9,6 @@ const Navbar = () => {
         <div className="navMenuItems">
           <Link to="home" className="navMenuItem">Home</Link>
           <Link to="menu" className="navMenuItem">Menu</Link>
-          <Link to="about" className="navMenuItem">About</Link>
           <Link to="cart" className="navMenuItem">Cart</Link>
         </div>  
     </nav>
