@@ -1,0 +1,137 @@
+.menu {
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 1rem 2rem; 
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2rem; 
+    max-width: 90rem; 
+    margin: 0 auto; 
+}
+
+.menu-item-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem; 
+    max-width: 20rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item-card h2 {
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+    color: black;
+}
+
+.item-desc {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.menu-item-image {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.menu-item-footer input[type="number"] {
+    color: rgb(0, 0, 0);
+    width: 60px;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-right: 0.8rem;
+    margin-left: 1rem;
+}
+
+.menu-item-footer span {
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+}
+
+.menu-item-footer button {
+    background-color: #03a845;
+    color: #fff;
+    margin-right: 0.9rem;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item-footer button:hover {
+    background-color: mediumblue;
+}
+
+@media (max-width: 600px) {
+    .menu {
+    padding: 0rem 3rem; 
+    }
+
+    .menu-title {
+        font-size: 2em;
+    }
+
+    .menu-items {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-item-card {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .menu-item-image {
+        width: 90%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .menu-item-card h2 {
+        font-size: 1.2em;
+    }
+    
+    .menu-item-footer {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu-item-footer input[type="number"] {
+        /* margin-right: 0;
+        margin-bottom: 0.5rem; */
+    }
+
+    .menu-item-footer span {
+        font-size: 1.5em;
+        color: rgb(0, 0, 0);
+        margin-right: 0.3rem;
+    }
+
+    .menu-item-footer button {
+        width: 40%;
+        padding: 10px 0;
+    }
+}

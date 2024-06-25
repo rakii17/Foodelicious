@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar/navbar';
 import Home from './components/Home/home';
 import Menu from './components/Menu/menu';
 import About from './components/About/about';
 import Cart from './components/Cart/cart';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const removeFromCart = (index) => {
+    const newCart = [...cart];
+    newCart.splice(index, 1);
+    setCart(newCart);
+  };
+
+  const handleCheckout = () => {
+    console.log('Checkout', cart);
+  };
+
   return (
     <Router>
       <div>
@@ -15,13 +27,13 @@ function App() {
           <Home />
         </div>
         <div id="skills">
-          <Menu />
+          <Menu setCart={setCart} cart={cart} />
         </div>
         <div id="projects">
           <About />
         </div>
         <div id="works">
-          <Cart />
+          <Cart cart={cart} removeFromCart={removeFromCart} handleCheckout={handleCheckout} />
         </div>
       </div>
     </Router>
