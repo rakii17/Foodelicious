@@ -31,14 +31,14 @@
 }
 
 .menu-item-card h2 {
-    font-size: 1.5em;
-    margin: 0.5rem 0;
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
     color: black;
 }
 
 .item-desc {
     color: black;
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .menu-item-image {
@@ -70,7 +70,8 @@
 
 .menu-item-footer button {
     background-color: #03a845;
-    color: #fff;
+    color: #ffffff;
+    font-weight: 500;
     margin-right: 0.9rem;
     border: none;
     padding: 10px 15px;
@@ -85,7 +86,7 @@
 
 @media (max-width: 600px) {
     .menu {
-    padding: 0rem 3rem; 
+    padding: 0rem 1.5rem; 
     }
 
     .menu-title {
@@ -99,18 +100,19 @@
     }
 
     .menu-item-card {
-        max-width: 90%;
+        max-width: 95%;
         padding: 1rem;
     }
 
     .menu-item-image {
-        width: 90%;
+        width: 95%;
         height: auto;
         border-radius: 8px;
     }
 
     .menu-item-card h2 {
-        font-size: 1.2em;
+        font-size: 1.5rem;
+        margin-bottom: 0;
     }
     
     .menu-item-footer {
@@ -120,14 +122,15 @@
     }
 
     .menu-item-footer input[type="number"] {
-        /* margin-right: 0;
-        margin-bottom: 0.5rem; */
+        margin-right: 0.2rem;
+        margin-bottom: 0rem;
+        width: 2.5rem;
     }
 
     .menu-item-footer span {
         font-size: 1.5em;
         color: rgb(0, 0, 0);
-        margin-right: 0.3rem;
+        margin-right: 0.4rem;
     }
 
     .menu-item-footer button {

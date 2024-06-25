@@ -11,8 +11,6 @@ const menuItems = [
   { id: 6, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
   { id: 7, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
   { id: 8, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 9, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 10, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
 ];
 
 const Menu = ({ setCart, cart }) => {
