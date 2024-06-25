@@ -48,7 +48,7 @@ const Menu = ({ setCart, cart }) => {
                 onChange={(e) => handleQuantityChange(e, item)}
                 className="quantity-input"
               />
-              <span>Rs.{item.totalPrice || item.price}</span>
+              <span>&#8377;{item.totalPrice || item.price}</span>
               <button onClick={() => addToCart(item)}>Add to Cart</button>
             </div>
           </div>

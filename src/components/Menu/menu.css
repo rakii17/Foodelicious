@@ -1,7 +1,7 @@
 .menu {
     max-width: 95rem;
     margin: 0 auto;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
 }
 
 .menu-title {
@@ -13,18 +13,18 @@
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 2rem; 
-    max-width: 90rem; 
-    margin: 0 auto; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 .menu-item-card {
-    background: #ffffff;
+    background: rgb(226, 226, 226);
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 0.5rem; 
+    padding: 0.5rem;
     max-width: 20rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -34,6 +34,7 @@
     font-size: 2rem;
     margin: 0 0 0.5rem 0;
     color: black;
+    text-decoration: underline;
 }
 
 .item-desc {
@@ -86,7 +87,7 @@
 
 @media (max-width: 600px) {
     .menu {
-    padding: 0rem 1.5rem; 
+        padding: 0rem 1.5rem;
     }
 
     .menu-title {
@@ -114,7 +115,7 @@
         font-size: 1.5rem;
         margin-bottom: 0;
     }
-    
+
     .menu-item-footer {
         flex-direction: row;
         align-items: center;

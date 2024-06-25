@@ -13,7 +13,7 @@ const Cart = ({ cart = [], removeFromCart, handleCheckout }) => {
             <div key={index} className="cart-item">
               <span>{item.title}</span>
               <span>Quantity: {item.quantity}</span>
-              <span>Price: ${item.totalPrice}</span>
+              <span>Price: &#8377;{item.totalPrice}</span>
               <button onClick={() => removeFromCart(index)} className="btn btn-secondary">Remove</button>
             </div>
           ))}
