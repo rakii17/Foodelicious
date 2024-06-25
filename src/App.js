@@ -8,6 +8,22 @@ import Cart from './components/Cart/cart';
 function App() {
   const [cart, setCart] = useState([]);
 
+  const addToCart = (item) => {
+    const existingItem = cart.find(cartItem => cartItem.id === item.id);
+    if (existingItem) {
+      existingItem.quantity += item.quantity || 1;
+      existingItem.totalPrice = existingItem.quantity * existingItem.price;
+      setCart([...cart]);
+    } else {
+      const newItem = {
+        ...item,
+        quantity: item.quantity || 1,
+        totalPrice: (item.quantity || 1) * item.price,
+      };
+      setCart([...cart, newItem]);
+    }
+  };
+
   const removeFromCart = (index) => {
     const newCart = [...cart];
     newCart.splice(index, 1);
@@ -15,7 +31,7 @@ function App() {
   };
 
   const handleCheckout = () => {
-    alert('Your order is delivered to your address. Thank You for using Foodelicious Webpage.', cart);
+    alert('Your order is delivered to your address. Thanks for using Foodelicious Webpage.', cart);
     setCart([]);
   };
 
@@ -27,9 +43,8 @@ function App() {
           <Home />
         </div>
         <div id="menu">
-          <Menu setCart={setCart} cart={cart} />
+          <Menu addToCart={addToCart} />
         </div>
-        
         <div id="cart">
           <Cart cart={cart} removeFromCart={removeFromCart} handleCheckout={handleCheckout} />
         </div>

@@ -53,7 +53,7 @@
     }
 
     .navMenuItems {
-        display: flex; /* Ensure flexbox is applied */
+        display: flex; 
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -66,7 +66,7 @@
         font-size: medium;
         flex: 1 1 auto;
         text-align: center;
-        min-width: 50px; /* Ensure there's a minimum width */
+        min-width: 50px; 
     }
 
     .navMenuItem:hover,
