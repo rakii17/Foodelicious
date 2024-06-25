@@ -1,16 +1,24 @@
 import React from 'react';
 import "./menu.css";
 import foodimg from '../../assets/food.jpg';
+import idli from '../../assets/idli.png';
+import puliyogare from '../../assets/puliyogare.png';
+import dosa from '../../assets/dosa.jpg';
+import palav from '../../assets/palav.jpg';
+import gheerice from '../../assets/gheerice.png';
+import lemonrice from '../../assets/lemonrice.png';
+import uppittu from '../../assets/uppittu.png';
+import fullmeals from '../../assets/fullmeals.png';
 
 const menuItems = [
-  { id: 1, title: "Pizza", description: "Delicious cheese pizza", image: foodimg, price: 10 },
-  { id: 2, title: "Burger", description: "Juicy beef burger", image: foodimg, price: 8 },
-  { id: 3, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 4, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 5, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 6, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 7, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
-  { id: 8, title: "Pasta", description: "Creamy Alfredo pasta", image: foodimg, price: 12 },
+  { id: 1, title: "Idli", description: "Delicious cheese pizza", image: idli, price: 40 },
+  { id: 2, title: "Puliyogare", description: "Creamy Alfredo pasta", image: puliyogare, price: 30 },
+  { id: 3, title: "Dosa", description: "Juicy beef burger", image: dosa, price: 50 },
+  { id: 4, title: "Palav", description: "Creamy Alfredo pasta", image: palav, price: 12 },
+  { id: 5, title: "Gheerice", description: "Creamy Alfredo pasta", image: gheerice, price: 12 },
+  { id: 6, title: "Lemonrice", description: "Creamy Alfredo pasta", image: lemonrice, price: 12 },
+  { id: 7, title: "Uppittu", description: "Creamy Alfredo pasta", image: uppittu, price: 12 },
+  { id: 8, title: "Fullmeals", description: "Creamy Alfredo pasta", image: fullmeals, price: 12 },
 ];
 
 const Menu = ({ setCart, cart }) => {
